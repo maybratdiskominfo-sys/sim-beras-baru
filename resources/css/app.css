@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Kode Animasi Fade-in yang sudah ada sebelumnya */
+.fade-in-hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+        opacity 0.8s ease-out,
+        transform 0.8s ease-out;
+}
+
+.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- TAMBAHKAN DI SINI --- */
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+    color: #1e3a8a !important;
+
+    /* 1. Mengubah tulisan MAYBRAT (Brand) */
+    .navbar-brand h2.text-primary {
+        color: #1e3a8a !important;
+    }
+
+    /* 2. Mengubah Icon di sebelah MAYBRAT */
+    .navbar-brand h2 i {
+        color: #1e3a8a !important;
+    }
+
+    /* 3. Mengubah Link Navbar (Home, About, dll) */
+    .navbar .navbar-nav .nav-link {
+        color: #444444; /* Warna default abu-abu tua saat tidak aktif */
+    }
+
+    /* 4. Mengubah Warna Link saat Aktif atau di-Hover (Biru Tua) */
+    .navbar .navbar-nav .nav-link.active,
+    .navbar .navbar-nav .nav-link:hover {
+        color: #1e3a8a !important;
+    }
+
+    /* 5. Mengubah Tombol "Download Now" (Outline Primary) */
+    .btn-outline-primary {
+        color: #1e3a8a !important;
+        border-color: #1e3a8a !important;
+    }
+
+    .btn-outline-primary:hover {
+        background-color: #1e3a8a !important;
+        color: #ffffff !important;
+    }
+}
